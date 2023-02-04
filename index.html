@@ -12,7 +12,14 @@
     <div class="arjs-loader">
       <div>Loading, please wait...</div>
     </div>
-
+    <script>
+      AFRAME.registerComponent('code-that-does-this', {
+        init: window.addEventListener("arjs-nft-loaded", (event) => {
+    // Hide loading overlay
+    document.getElementsByClassName("arjs-loader").display = "none";
+  }),
+      });
+    </script>
     <!-- a-frame scene -->
     <a-scene
       vr-mode-ui="enabled: false;"
