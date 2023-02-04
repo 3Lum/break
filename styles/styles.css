@@ -1,13 +1,12 @@
 
 .header {
     background-color: #000000;
-    border-radius: 25px;
     color: white;
     text-align: center;
     padding: 5px;
+    font-size:10px
   }
-.arFrame {
-  margin : 10px; 
+.arFrame { 
   overflow: hidden;
 }
 .a-loader-title {
